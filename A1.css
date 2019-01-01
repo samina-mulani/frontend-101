@@ -1,0 +1,91 @@
+#nav{
+	box-sizing: border-box;
+	background: blue;
+	background: linear-gradient(#707070,#000);
+	border-radius: 5px;
+	display: flex;
+	flex-direction: row;
+	height: 10vh;
+	justify-content:space-between;
+}
+ul{
+		list-style-type: none;
+		margin: 0;
+  		padding: 0;
+}
+.item{
+	box-sizing: border-box;
+	border-radius: 5px;
+	background: blue;
+	background: linear-gradient(#707070,#000);
+	color: white;	
+	font-size: 5vh;
+	font-family: "Lucida Sans";
+	padding: 1%;
+	text-align: center;
+	flex: 1;
+	z-index:1;
+}
+.org{
+	align-self: flex-start;
+	border-radius: 5px;
+	flex-basis: 80%; 
+	box-sizing: border-box;
+	color: white;
+	text-align: left;
+	font-size:7vh;
+	padding-left:5vh;
+	font-family: 'Alfa Slab One', cursive, 'Century Gothic';
+	letter-spacing: 0.3em;
+	text-shadow: 3px 3px 2px #000; 	
+	z-index:1;
+}
+.item a:link{
+	text-decoration: none;
+	color:white;
+	height: 10%;
+}
+.item:not(.active):hover{
+	background: black;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.org:hover{
+	background: blue;
+	background: linear-gradient(#707070,#000);
+	border-radius: 5px;
+}
+.item a:visited{
+	color:white;
+}
+
+.active{
+	background: #06CC00;
+	background: linear-gradient(#06F900, #069900);
+}
+
+
+.iconContainer{
+	flex-basis: auto;
+	background: blue;
+	background: linear-gradient(#707070,#000);
+	height: 10vh;
+	border-radius:5px;
+	width: 12vh;
+}
+
+.icon{
+	margin: 1.5vh 2vh 0vh 2vh ;
+	background:white;
+	width:8vh;
+	height: 1vh;
+}
+
+.iconContainer:hover{
+	cursor: pointer;
+}
+
+.disappear{
+	display: none;
+}
+
