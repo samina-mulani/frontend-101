@@ -1,0 +1,31 @@
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	background: #47F1FF;
+	min-height: 100vh;
+	width: 100vw;
+	margin:-10px;
+}
+.item{
+	background: black;
+	flex: 0 0 20%;
+	text-align: center;
+	line-height: 20vh;
+	min-height: 20vh;
+	color: #fff;
+	font-weight: 900;
+	font-size: 10vh;
+	font-family: Garamond, Tahoma;
+	margin: 10px;
+	border-radius: 5px;
+	border: 2px solid white;
+}
+
+@media only screen and (max-width: 600px){
+	.item{
+		flex-basis: 40%;
+	}
+}
