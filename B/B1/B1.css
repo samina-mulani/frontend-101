@@ -20,7 +20,7 @@ html{
 }
 
 
-@media only screen and (orientation:portrait){
+/*@media only screen and (orientation:portrait){
 	canvas{
 		display: none;
 	}
@@ -44,4 +44,10 @@ html{
 	}
 
 
+}*/
+
+@media only screen and (max-width: 600px){
+	*{
+		transform:scale(0.8);
+	}
 }
