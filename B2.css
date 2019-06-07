@@ -1,0 +1,150 @@
+html,body{
+	margin: 0;
+	background: #008FFD;
+	background: linear-gradient(#008FAD,#00DEFC,#008FFD) no-repeat;
+	height: 100%;
+	width: 100%;
+	background-attachment: fixed;
+}
+
+.container{
+	
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	
+}
+
+.heading {
+	font-family:  'Charm', cursive;
+	font-size: 40px;
+	text-align: center;
+	text-shadow: 3px 3px 2px #004CA1;
+	color:white;
+	
+}
+
+
+.mem{
+	box-sizing: border-box;
+	display: inline-block;
+	max-width: 33vw;
+	min-width: 150px;
+	background: white;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px black;
+	height: 400px;
+	margin:10px;
+	position: relative;
+	padding: 1vw;
+}
+
+.img{
+	align-content: center;
+	border-radius: 5px;
+	height: 150px;
+	width: 100%;
+	border-bottom: 1px solid black;
+}
+p{
+	word-break: break-all;
+}
+.name{
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: 900;
+}
+.pos{
+	text-align: center;
+	color: gray;
+}
+
+.prof{
+	text-align: center;
+	font-family: Verdana;
+	color: black;
+}
+.con{
+	position: absolute;
+	bottom:0;
+	font-weight: 900;
+}
+.mem:hover{
+	transform: scale(1.04);
+	box-shadow: 10px 10px black;
+}
+
+
+#add{
+	min-width: 0;
+	padding:0.1em;
+	font-size: 5em;
+	text-align: center;
+	border-radius: 50%;
+}
+
+#add:hover{
+	cursor: pointer;
+}
+
+form{
+	margin-left: 1em; 
+	color: white;
+	font-family:  'Charm', cursive;
+	font-size: 30px;
+	text-shadow: 3px 3px 2px #004CA1;
+}
+
+form div{
+	display: inline;
+}
+
+input{
+	color: white;
+	padding: 0.3em;
+	font-family:  Verdana;
+	font-size: 25px;
+	background: none;
+	border:none;
+	border-bottom: 2px solid white;
+	text-shadow: 3px 3px 2px #004CA1;
+}
+
+::placeholder{
+	font-size: 20px;
+	color: white;
+	opacity: 0.7;
+}
+.btn{
+	width: 5em;
+	text-align: center;
+	font-size: 20px;
+	padding:0.6em;
+	background: white;
+	color:black;
+	border:2px solid black;
+	margin:10px;
+	border-radius: 5px;
+	text-shadow: none;
+	margin-left: 2em;
+	margin-top: 1em;
+}
+
+.btn:hover{
+	cursor:pointer;
+	background: orange;
+}
+
+.disappear{
+	display: none;
+}
+@media only screen and (max-width: 600px){
+	.mem{
+		flex-basis: auto;
+		max-width: 80vw;
+    	flex-shrink: 0;
+	}
+}
