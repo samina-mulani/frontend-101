@@ -9,4 +9,4 @@ ACM Winter Project
 
 [B1](B/B1/B1.html)
 
-[B2](B/B2/B2.html)  (delete functionality yet to be added)
+[B2](B/B2/B2.html)  
