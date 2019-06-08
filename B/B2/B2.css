@@ -1,3 +1,7 @@
+*{
+	box-sizing: border-box;
+}
+
 html,body{
 	margin: 0;
 	background: #008FFD;
@@ -27,6 +31,30 @@ html,body{
 	
 }
 
+.close{
+	display: none;
+	z-index: 2;
+	position: absolute;
+	top:0;
+	right: 0;
+	padding-top: 5px;
+	transform: translateX(5px) translateY(-5px);
+	text-align: center;
+	font-weight: 900;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	background: red;
+	color:white;
+	border: 1px solid black;
+	box-shadow: 5px 5px black;
+}
+
+.close:hover{
+	cursor: pointer;
+	background: black;
+	border-color: white;
+}
 
 .mem{
 	box-sizing: border-box;
@@ -72,6 +100,7 @@ p{
 	bottom:0;
 	font-weight: 900;
 }
+
 .mem:hover{
 	transform: scale(1.04);
 	box-shadow: 10px 10px black;
@@ -87,6 +116,18 @@ p{
 }
 
 #add:hover{
+	cursor: pointer;
+}
+
+#sub{
+	min-width: 0;
+	padding:0.1em;
+	font-size: 5em;
+	text-align: center;
+	border-radius: 50%;
+}
+
+#sub:hover{
 	cursor: pointer;
 }
 
@@ -138,9 +179,6 @@ input{
 	background: orange;
 }
 
-.disappear{
-	display: none;
-}
 @media only screen and (max-width: 600px){
 	.mem{
 		flex-basis: auto;
