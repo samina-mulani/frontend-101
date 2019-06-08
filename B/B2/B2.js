@@ -2,20 +2,29 @@ $(document).ready(function(){
 	let x = document.getElementsByClassName("mem")[0].offsetWidth;
 	document.getElementById("add").style.width = x/2 + 'px';
 	document.getElementById("add").style.height = x/2 + 'px';
+	document.getElementById("sub").style.width = x/2 + 'px';
+	document.getElementById("sub").style.height = x/2 + 'px';
+
+	$("form").hide();
 
 	function Cancel(){
 		$("form").hide();
 	}
 
-	$("form").hide();
-
 	$('#add').click(
 		function(){
+			$(".close").hide();
     		$("form").toggle();
     	});
 
 	$(".btn").click(Cancel);
-
+	$("#sub").click(function(){
+		$("form").hide();
+		$(".close").toggle();
+		$(".close").click(function(){
+			$(this).parent().hide();
+		});
+	});
 
 	let form = document.getElementById("frm");
 	form.onsubmit = function(e){
@@ -46,7 +55,12 @@ $(document).ready(function(){
 		let p4 = document.createElement('p');
 		p4.className = "con";
 		p4.textContent = `${con}`;
+
+		let closebtn = document.createElement('div');
+		closebtn.innerHTML = "X";
+		closebtn.className = "close";
 		
+		newmem.appendChild(closebtn);
 		newmem.appendChild(img);
 		newmem.appendChild(p1);
 		newmem.appendChild(p2);
