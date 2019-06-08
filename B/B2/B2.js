@@ -22,7 +22,11 @@ $(document).ready(function(){
 		$("form").hide();
 		$(".close").toggle();
 		$(".close").click(function(){
-			$(this).parent().hide();
+			let x = this;
+			$(this).parent().animate({opacity:0},500);
+			setTimeout(function(){
+				x.parentElement.style.display = 'none';
+			},500);
 		});
 	});
 
