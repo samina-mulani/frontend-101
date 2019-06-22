@@ -10,3 +10,5 @@ ACM Winter Project
 [B1](B/B1/B1.html)
 
 [B2](B/B2/B2.html)  
+
+[C2](C/C2/C2.html)
